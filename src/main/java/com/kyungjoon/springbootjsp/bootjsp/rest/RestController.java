@@ -39,7 +39,7 @@ public class RestController {
     public ModelAndView index() {
         ModelAndView mav = new ModelAndView();
         // mav.addObject("message", "업로드성공!");
-        mav.setViewName("/rest/welcome");
+        mav.setViewName("redirect:/rest/list");
         mav.addObject("message", "고경준은 천재님이십니다 과식하지 말자 운동을 많이 하자!!!");
         return mav;
     }
